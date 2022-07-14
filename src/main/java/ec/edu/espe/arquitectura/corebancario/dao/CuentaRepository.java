@@ -8,5 +8,6 @@ import java.util.Optional;
 public interface CuentaRepository extends MongoRepository<Cuenta,String> {
 
     Optional<Cuenta> findByIdCliente(String codCliente);
+    Optional<Cuenta> findByCodInterno(String codInterno);
 
 }
